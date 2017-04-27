@@ -26,21 +26,23 @@
 <br>
 <p> Here you can have your picture on this page along with your name! </p>
 
-<button onclick="displayName()"> Display your Name </button>
 
+
+Enter your name here, friend: <input type="text" name="entered_name" id="nameID"/>
+<button onclick="displayname()"> Display your Name </button>
 <script>
+function displayname(){
 
-var name = "Bob the Builder";
-window.localStorage.setItem(name);
+var input = document.getElementById("nameID").value;
+localStorage.setItem("entered_name", input);
 
-var name = "Bob the Builder";
-var name = window.localStorage.getItem(name);
+var storedValue = localStorage.getItem("entered_name");
 
-function displayName() {
-alert (name);
+alert(storedValue);
 }
 </script>
 
+<br>
 <br>
 
 
