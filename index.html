@@ -29,23 +29,17 @@ alert("Hello");
 
 <br>
 <p> Here you can have your picture on this page along with your name! </p>
+<form>
+     <label for="text-1">Text input:</label>
+     <input type="text" name="text-1" id="text-1" value="">
+     <label for="text-3">Text input: data-clear-btn="true"</label>
+     <input type="text" data-clear-btn="true" name="text-3" id="text-3" value="">
+</form>
 <br>
 
 
 </center>
 </div>
-
-<script>
-var successHandler = function (pedometerData) {
-    pedometerData.startDate; -> ms since 1970
-    pedometerData.endDate; -> ms since 1970
-    pedometerData.numberOfSteps;
-    pedometerData.distance;
-    pedometerData.floorsAscended;
-    pedometerData.floorsDescended;
-};
-pedometer.startPedometerUpdates(successHandler, onError);
-</script>
 
 
 <footer>
