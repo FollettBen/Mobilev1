@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FrontPage</title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+
+<body>
+
+<header>
+<h1>Mobile Application</h1> 
+</header>
+<nav id="navigation">
+
+<ul class="hnavbar">
+<li><a href="frontpage.html" style="color: blue">Menu</a></li>
+</ul>
+
+</nav>
+
+<div class="middle">
+<center>
+
+<h1>Welcome to the Mobile Application Homepage</h1>
+<script>
+alert("Hello");
+</script>
+
+
+<br>
+<p> Here you can have your picture on this page along with your name! </p>
+<br>
+
+
+</center>
+</div>
+
+<script>
+var successHandler = function (pedometerData) {
+    pedometerData.startDate; -> ms since 1970
+    pedometerData.endDate; -> ms since 1970
+    pedometerData.numberOfSteps;
+    pedometerData.distance;
+    pedometerData.floorsAscended;
+    pedometerData.floorsDescended;
+};
+pedometer.startPedometerUpdates(successHandler, onError);
+</script>
+
+
+<footer>
+<p>Copyright &copy; 2017 - BenFlix - All Rights Reserved</p>
+</footer>
+</body>
+
+
+</html>
