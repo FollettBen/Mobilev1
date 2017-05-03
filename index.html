@@ -12,15 +12,6 @@
 
 </head>
 
-<nav id="navigation">
- 
-<ul class="hnavbar">
-<li><a href="frontpage.html">Menu</a></li>
-<li><a href="team.php">Pedometer</a></li>
-
-</ul>
- 
-</nav>
 
 <body>
 
@@ -45,7 +36,7 @@ Enter your name here, friend: <input type="text" name="entered_name" id="nameID"
 function displayname(){
 
 var input = document.getElementById("nameID").value;
-localStorage.setItem("enterd_name", input);
+localStorage.setItem("entered_name", input);
 
 var storedValue = localStorage.getItem("entered_name");
 
@@ -59,7 +50,7 @@ alert(storedValue);
 
        	<button id="phonegapcamera" onclick="capturePhoto();">Smile for the Camera!</button> <br>
        
-	<center><img style="display:none;" id="image" src="" /></center>
+	<center><img style="display:none;width:200px;height:200px;" id="image" src="" /></center>
         
 	</div>
 
